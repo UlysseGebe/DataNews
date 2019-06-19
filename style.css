@@ -1,6 +1,63 @@
-/*
-Theme Name: Magazine
-Author: Ulysse Geberowicz
-Author URI: http://monsiteweb.com
-Description: Mon premier thème WordPress !
-*/
+html { font-size: calc(1em + 1vw) }
+
+
+main h1
+{
+    font-size: 0.8em;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+main a
+{
+    font-size: 0.7em;
+}
+
+main .main-article
+{
+    padding-bottom: 30px;
+    border-bottom: 1px solid blue;
+}
+
+main .articles
+{
+    padding-top: 40px;
+}
+
+main .articles .article
+{
+    margin: 30px 0;
+}
+
+main .articles .article img
+{
+    width: 12rem;
+    height: auto;
+}
+
+main .articles .article time
+{
+    display: block;
+    font-size: 0.6em;
+}
+
+@media (max-width: 680px) {
+        main .main-article
+        {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        main .articles
+        {
+            padding-top: 0;
+        }
+        main .articles .article img
+        {
+            width: 8rem;
+            height: auto;
+        }
+        main .articles .article .description
+        {
+            padding-right: 0.6rem;
+        }
+    }

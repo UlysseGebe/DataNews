@@ -1,12 +1,14 @@
 <?php get_header(); ?>
 <?php get_sidebar(); ?>
 
-<?php if (is_page(21)) {
-      include(TEMPLATE_PATH.'/all_articles.php');
-    }
-    else {
-        include(TEMPLATE_PATH.'/default.php');
-    }
-?>
+<main role="main" class="probootstrap-main js-probootstrap-main">
+    <div class="card-columns">
+        <?php while (have_posts()): ?>
+            <?= the_post() ?>
+            <h1><?= the_title() ?></h1>
+            <p><?= the_content() ?></p>
+        <?php endwhile ?>
+    </div>
+</main>
 
 <?php get_footer(); ?>

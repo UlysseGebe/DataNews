@@ -1,6 +1,5 @@
 <aside class="probootstrap-aside js-probootstrap-aside">
   <div class="probootstrap-site-logo probootstrap-animate" data-animate-effect="fadeInLeft">
-
     <a href="<?= bloginfo( 'url' ) ?>" class="mb-2 d-block probootstrap-logo"><?= bloginfo( 'title' ) ?></a>
     <p class="mb-0"><?= bloginfo( 'description' ) ?></p>
   </div>

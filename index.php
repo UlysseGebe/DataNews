@@ -12,7 +12,7 @@
   <div class="card-columns">
     <?php while ($the_query->have_posts()): ?>
     <?= $the_query->the_post() ?>
-          <h1><?= the_title() ?></h1>
+          <h1><a href="<?= the_permalink() ?>"><?= the_title() ?></a></h1>
           <h2>Posté le <?= the_time('F jS, Y') ?></h2>
           <p><?= the_content() ?></p>
   <?php endwhile ?>

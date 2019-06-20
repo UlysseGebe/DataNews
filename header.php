@@ -15,6 +15,15 @@
         <?= wp_head() ?>
     </head>
     <body <?= body_class(); ?>>
-        <header id="header">
-            <?= wp_nav_menu($args) ?>
-        </header>
+      <header class="container col-lx-6">
+        <div class="logo col-2">
+            <?php 
+            if ( function_exists( 'the_custom_logo' ) ) {
+              the_custom_logo();
+            }
+            ?>
+        </div>
+        <div class="right container col-lx-5">
+          <?= wp_nav_menu($args) ?>
+        </div>
+      </header>

@@ -8,5 +8,5 @@
       );
 ?>
 <nav class="container col-lx-6">
-  <?= wp_nav_menu($args) ?>
+  <!-- wp_nav_menu($args) -->
 </nav>

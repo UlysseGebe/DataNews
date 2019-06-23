@@ -24,7 +24,7 @@
   ?>
   <?php if ($count == 1): ?>
   <div class="banner_inner d-flex align-items-center"
-    style="background: url('<?= the_post_thumbnail_url( 'bigThumbnail', $attr ) ?>')">
+    style="background-image: url('<?= the_post_thumbnail_url( 'bigThumbnail', $attr ) ?>')">
     <div class="container">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">

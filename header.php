@@ -34,14 +34,14 @@
           <a href="#"><?= current_time('l, F d, Y') ?></a>
         </div>
         <div class="float-right">
-        <?= wp_nav_menu($args) ?>
+          <?= wp_nav_menu($args) ?>
         </div>
       </div>
     </div>
     <div class="logo_part">
       <div class="container">
         <div class="float-left">
-        <?php 
+          <?php 
             if ( function_exists( 'the_custom_logo' ) ) {
               the_custom_logo();
             }
@@ -54,9 +54,16 @@
         <div class="container">
           <div class="container_inner">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <?php 
+            if ( function_exists( 'the_custom_logo' ) ) {
+              the_custom_logo();
+            }
+          ?>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <?= wp_nav_menu($arg) ?>

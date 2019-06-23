@@ -100,7 +100,7 @@
 		display: block;
 		width: 25px;
 		height: 3px;
-		background: #ea2c58;
+		background: #6028d8;
 		margin: auto;
 		margin-bottom: 4px;
 		transition: all 400ms linear;
@@ -141,6 +141,7 @@
 	.header_area .navbar-collapse {
 		max-height: 340px;
 		overflow-y: scroll;
+		padding-top: 1rem;
 	}
 
 	.header_area .navbar .nav .menu-item.submenu ul .menu-item .menu-image-title-after {
@@ -161,7 +162,7 @@
 		display: block;
 	}
 
-	.main_menu .navbar .navbar-brand {
+	.main_menu .navbar .custom-logo-link {
 		display: inline-block;
 		padding-top: 11px;
 	}

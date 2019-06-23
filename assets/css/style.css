@@ -216,7 +216,7 @@ button:focus {
   width: 100%;
 }
 
-.main_menu .navbar .navbar-brand {
+.main_menu .navbar .custom-logo-link {
   display: none;
 }
 
@@ -368,6 +368,7 @@ button:focus {
 .home_banner_area .banner_inner {
   position: relative;
   background: no-repeat scroll center center;
+  background-size: cover;
   min-height: 600px;
 }
 

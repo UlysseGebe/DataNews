@@ -7,6 +7,8 @@
         wp_register_style( 'font', CSS_URL.'/font-awesome.min.css' );
         wp_enqueue_style( 'font' );
 
+        wp_enqueue_style( 'jquery-ui' );
+
         wp_register_style( 'Mainstyle', CSS_URL.'/style.css' );
         wp_enqueue_style( 'Mainstyle' );
 

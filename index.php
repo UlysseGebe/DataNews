@@ -53,14 +53,14 @@
         <div class="choice_item">
           <img class="img-fluid" src="<?= the_post_thumbnail_url( 'bigThumbnail') ?>" alt="">
           <div class="choice_text">
-            <div class="date">
-              <a class="gad_btn" href="<?= the_permalink() ?>">Lire la suite</a>
-              <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i><?= the_time('j F Y') ?></a>
-            </div>
             <a href="<?= the_permalink() ?>">
               <h4><?= the_title() ?></h4>
             </a>
             <?= the_excerpt() ?>
+            <div class="date mt-10">
+              <a class="gad_btn" href="<?= the_permalink() ?>">Lire la suite</a>
+              <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i><?= the_time('j F Y') ?></a>
+            </div>
           </div>
         </div>
       </div>

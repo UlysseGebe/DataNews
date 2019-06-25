@@ -206,26 +206,14 @@ button:focus {
 }
 
 .main_menu .navbar {
-  background: transparent;
   padding: 0px;
   border: 0px;
   border-radius: 0px;
   margin-bottom: 0px;
-}
-
-.main_menu .navbar-collapse {
   background: #f9f9ff;
-}
-.main_menu .navbar {
-  background: transparent;
-  padding: 0px;
-  border: 0px;
-  border-radius: 0px;
-  margin-bottom: 0px;
 }
 
 .main_menu .navbar .container_inner {
-  background: #fff;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   display: -webkit-box;
@@ -3935,7 +3923,15 @@ h6 {
   margin-bottom: 30px;
 }
 
-.f_title h3 {
+.nf-form-title h3 {
+  background: #161a29;
+  border-left: 3px solid #6028D8;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.f_title h3,
+.nf-form-title h3 {
   padding-left: 15px;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
@@ -3944,8 +3940,8 @@ h6 {
   line-height: 40px;
 }
 
-.f_widgets_inner {
-  padding-bottom: 100px;
+#menu-newsletter {
+  list-style: none;
 }
 
 .m_news_widgets .m_news .media {

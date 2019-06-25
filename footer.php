@@ -6,17 +6,17 @@
     'menu_id' => 'footer_id',
     'container_class' => 'col-6'
   );
+  $arg=array(
+    'theme_location' => 'newsletter',
+    
+  );
 ?>
 <footer class="footer-area">
   <div class="container">
     <div class="row f_widgets_inner">
       <div class="col-lg-6 col-md-6 col-sm-6">
         <div class="single-footer-widget ab_widgets">
-          <img src="img/footer-logo.png" alt="">
-          <p>Technology and gadgets Adapter (MPA) is our favorite iPhone solution, since it lets you use
-            the headphones you’re most comfortable with. It has an iPhone-compatible jack at one end and
-            a microphone module with an Answer/End/Pause button and a female 3.5mm audio jack for
-            connectingheadphones</p>
+          <?= wp_nav_menu($arg)?>
         </div>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6">

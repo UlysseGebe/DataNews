@@ -40,12 +40,12 @@
             </div>
             <div class="media-body">
               <div class="choice_text">
-                <div class="date">
+                <a href="<?= the_permalink() ?>"><h4><?= the_title() ?></h4></a>
+                <p><?= the_excerpt() ?></p>
+                <div class="date mt-10">
                   <a class="gad_btn" href="<?= the_permalink() ?>">Lire la suite</a>
                   <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i><?= the_time('j F Y') ?></a>
                 </div>
-                <a href="<?= the_permalink() ?>"><h4><?= the_title() ?></h4></a>
-                <p><?= the_excerpt() ?></p>
               </div>
             </div>
           </div>

@@ -142,7 +142,7 @@
 		max-height: 340px;
 		overflow-y: scroll;
 		padding-top: 1rem;
-		background: #f9f9ff;
+		background: #fff;
 	}
 
 	.header_area .navbar .nav .menu-item.submenu ul .menu-item .menu-image-title-after {
@@ -424,7 +424,7 @@
 	============================================================================================ */
 	.header_area .navbar-collapse {
 		max-height: 250px;
-		background: #f9f9ff;
+		background: #fff;
 	}
 
 	/* End Main Menu Area css

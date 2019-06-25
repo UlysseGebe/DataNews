@@ -213,6 +213,17 @@ button:focus {
   margin-bottom: 0px;
 }
 
+.main_menu .navbar-collapse {
+  background: #f9f9ff;
+}
+.main_menu .navbar {
+  background: transparent;
+  padding: 0px;
+  border: 0px;
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+
 .main_menu .navbar .container_inner {
   background: #fff;
   -ms-flex-wrap: nowrap;
@@ -234,11 +245,19 @@ button:focus {
 }
 
 .main_menu .navbar .nav {
-  padding-left: 20px;
+  padding: 0;
+  margin-bottom: 3px;
 }
 
 .main_menu .navbar .nav .menu-item {
-  margin-right: 45px;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+
+.main_menu .navbar .nav .menu-item:hover {
+  background-color: white;
+  margin-bottom: -3px;
+  border-bottom: 3px solid #6028D8;
 }
 
 .main_menu .navbar .nav .menu-item .menu-image-title-after {
@@ -1222,14 +1241,6 @@ button:focus {
 .single-post-area .social-links li {
   display: inline-block;
   margin-bottom: 10px;
-}
-
-  color: #cccccc;
-  padding: 7px;
-  font-size: 14px;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
 }
 
 .single-post-area .social-links li a:hover {

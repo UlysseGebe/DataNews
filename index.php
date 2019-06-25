@@ -23,7 +23,7 @@
           <div class="carousel-item active">
             <div class="banner_content text-center">
               <div class="date">
-                <a class="gad_btn" href="<?= the_permalink() ?>">Voir la vidéo</a>
+                <a class="gad_btn" href="<?= the_permalink() ?>">Lire la suite</a>
                 <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i><?= the_time('j F Y') ?></a>
               </div>
               <h3><?= the_title() ?></h3>
@@ -40,7 +40,7 @@
 <section class="choice_area p_120">
   <div class="container">
     <div class="main_title2">
-      <h2>Editor’s Choice</h2>
+      <h2>Top articles</h2>
     </div>
     <div class="row choice_inner">
       <?php while ($the_query2->have_posts()): ?>
@@ -54,7 +54,7 @@
           <img class="img-fluid" src="<?= the_post_thumbnail_url( 'bigThumbnail') ?>" alt="">
           <div class="choice_text">
             <div class="date">
-              <a class="gad_btn" href="<?= the_permalink() ?>">Voir la vidéo</a>
+              <a class="gad_btn" href="<?= the_permalink() ?>">Lire la suite</a>
               <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i><?= the_time('j F Y') ?></a>
             </div>
             <a href="<?= the_permalink() ?>">

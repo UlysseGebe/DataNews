@@ -13,9 +13,6 @@
         wp_register_script('stellar', JS_URL . '/stellar.js', array(),'1.1', true);
         wp_enqueue_script('stellar');
 
-        wp_register_script('mail-script', JS_URL . '/mail-script.js', array(),'1.1', true);
-        wp_enqueue_script('mail-script');
-
         wp_register_script('theme', JS_URL . '/theme.js', array(),'1.1', true);
         wp_enqueue_script('theme');
     }

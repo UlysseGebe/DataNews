@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:300,400,500,700");
 
+#wpadminbar {
+  display: none;
+}
+
 .list {
   list-style: none;
   margin: 0px;
@@ -1193,12 +1197,24 @@ button:focus {
   padding-top: 10px;
 }
 
+.single-post-area input[type="submit"] {
+  font-size: 14px;
+  line-height: 29px;
+  border: 0px;
+  width: 100%;
+  font-weight: 300;
+  color: #fff;
+  padding: 0 20px;
+  border-radius: 45px;
+  z-index: 0;
+  background: #6028D8;
+}
+
 .single-post-area .social-links li {
   display: inline-block;
   margin-bottom: 10px;
 }
 
-.single-post-area .social-links li a {
   color: #cccccc;
   padding: 7px;
   font-size: 14px;

@@ -24,6 +24,7 @@
   <meta charset="<?= bloginfo( 'charset' ) ?>" />
   <link rel="stylesheet" href="<?= bloginfo('stylesheet_url') ?>">
   <?= wp_head() ?>
+  <title><?= bloginfo('title') ?><?= wp_title($sep = '-') ?></title>
 </head>
 
 <body <?= body_class(); ?>>

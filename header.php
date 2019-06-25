@@ -1,20 +1,17 @@
-<?php // SYNTAXE : wp_nav_menu( array $args = array() )
+<?php
   $args=array(
-    'theme_location' => 'topBar', // nom du slug
-    'menu' => 'topBar_fr', // nom à donner cette occurence du menu
-    'menu_class' => 'list header_social', // class à attribuer au menu
-    // voir les autres arguments possibles sur le codex
+    'theme_location' => 'topBar',
+    'menu' => 'topBar_fr',
+    'menu_class' => 'list header_social',
   );
 
   $arg=array(
-    'theme_location' => 'header', // nom du slug
-    'menu' => 'header_fr', // nom à donner cette occurence du menu
-    'menu_class' => 'nav navbar-nav menu_nav', // class à attribuer au menu
-    'menu_id' => 'menu_id', // id à attribuer au menu
+    'theme_location' => 'header',
+    'menu' => 'header_fr',
+    'menu_class' => 'nav navbar-nav menu_nav',
+    'menu_id' => 'menu_id',
     'container_class' => 'collapse navbar-collapse offset',
     'container_id' => 'navbarSupportedContent',
-    'link_id' => 'navbarSupportedContent'
-    // voir les autres arguments possibles sur le codex
   );
 ?>
 <!DOCTYPE html>
@@ -60,8 +57,9 @@
               the_custom_logo();
             }
           ?>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>

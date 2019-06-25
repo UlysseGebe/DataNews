@@ -1,13 +1,12 @@
-<?php // SYNTAXE : wp_nav_menu( array $args = array() )
-      $args=array(
-        'theme_location' => 'footer', // nom du slug
-        'menu' => 'footer_fr', // nom à donner cette occurence du menu
-        'menu_class' => 'list', // class à attribuer au menu
-        'menu_id' => 'footer_id', // id à attribuer au menu
-        'container_class' => 'col-6',
-        // voir les autres arguments possibles sur le codex
-      );
-      ?>
+<?php
+  $args=array(
+    'theme_location' => 'footer',
+    'menu' => 'footer_fr',
+    'menu_class' => 'list',
+    'menu_id' => 'footer_id',
+    'container_class' => 'col-6'
+  );
+?>
 <footer class="footer-area">
   <div class="container">
     <div class="row f_widgets_inner">
@@ -36,9 +35,7 @@
         <div class="f_boder"></div>
       </div>
       <p class="col-lg-8 col-md-8 footer-text m-0">
-        Copyright &copy;<script>
-          document.write(new Date().getFullYear());
-        </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by
+        Copyright &copy;<?= current_time('Y') ?> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by
         <a href="https://www.hetic.net" target="_blank">Hetic Studients</a>
       </p>
       <div class="col-lg-4 col-md-4 footer-social">
@@ -51,7 +48,7 @@
     </div>
   </div>
 </footer>
-<?php wp_footer();  ?>
+<?= wp_footer() ?>
 </body>
 
 </html>

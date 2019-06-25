@@ -8,7 +8,7 @@
 <?= the_post() ?>
 <section class="banner_area">
   <div class="banner_inner d-flex align-items-center">
-    <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background="" style="background-image: url('<?= wp_get_attachment_url( $image_id = 170) ?>')">></div>
+    <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background="" style="background-image: url('<?= IMAGES_URL.'/testimonial.jpg' ?>')">></div>
         <div class="container">
         <div class="banner_content text-center">
           <h2><?= the_title() ?></h2>

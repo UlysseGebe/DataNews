@@ -4,6 +4,15 @@
   display: none;
 }
 
+.aligncenter {
+  text-align: center;
+}
+
+.wp-block-embed.alignright {
+  max-width: 100%;
+  text-align: right;
+}
+
 .list {
   list-style: none;
   margin: 0px;

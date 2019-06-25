@@ -1,15 +1,7 @@
-<?php
-    $attr = array('alt'=> get_the_title(),
-                  'class'=>'img-fluid'
-    );
-    $attrib = array('alt'=> get_the_title());
-?>
-<?php get_header(); ?>
+<?= get_header() ?>
 
 <?php while (have_posts()): ?>
-<?php
-  the_post();
-?>
+<?= the_post() ?>
 <section class="banner_area">
     <div class="banner_inner d-flex align-items-center">
       <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" style="background-image: url('<?= the_post_thumbnail_url() ?>')"></div>
@@ -49,4 +41,4 @@
 </section>
 <?php endwhile ?>
 
-<?php get_footer(); ?>
+<?= get_footer() ?>
